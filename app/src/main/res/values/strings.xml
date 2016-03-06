@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ShopCatalog</string>
+
+    <string name="navigation_drawer_open">Открыть меню</string>
+    <string name="navigation_drawer_close">Закрыть меню</string>
+
+    <string name="action_settings">Настройки</string>
+
+    <string name="catalog">Каталог</string>
+
+    <string name="menu">Меню</string>
+    <string name="menu_catalog">Каталог</string>
+    <string name="menu_contacts">Контакты</string>
+
+    <string name="cost_description">"Цена: "</string>
+    <string name="weight_description">"Вес: "</string>
+
+    <string name="md5_key">51:0D:AB:DA:E4:1C:BA:AF:6B:44:C8:F4:53:D4:DB:1A:65:50:B4:9F</string>
+    <string name="api_key">AIzaSyB7uSP4L-r_aXSXUuPxS9FMGVqRHi-8kUU</string>
+
+    <string name="contacts">Котакты</string>
+    <string name="first_address">ул. Чапаева 3, к. 355</string>
+    <string name="second_address">ул. Октябрьская 10, к. 705</string>
+
+    <string name="error_title">Проблемы с соединением</string>
+    <string name="error_message">Проблемы с интернет соединением.
+        \nПроверьте соединение и попробуйте ещё раз</string>
+
+</resources>
