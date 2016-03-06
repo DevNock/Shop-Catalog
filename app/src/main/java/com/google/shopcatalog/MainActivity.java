@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity
     public static final String EXTRA_OFFERS_LIST = "com.google.shop_catalog.offers_list";
     public static final String EXTRA_OFFER = "com.google.shop_catalog.offer";
     public static final String EXTRA_NAME_CATEGORY = "com.google.catalog.name_category";
+    public static final int REQUEST_CODE_SOME_FEATURES_PERMISSIONS = 0;
 
 
     @Override
