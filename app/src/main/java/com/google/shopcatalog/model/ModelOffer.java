@@ -1,4 +1,4 @@
-package com.google.shopcatalog;
+package com.google.shopcatalog.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

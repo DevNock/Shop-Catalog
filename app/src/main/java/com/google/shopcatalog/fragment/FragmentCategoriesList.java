@@ -1,4 +1,4 @@
-package com.google.shopcatalog;
+package com.google.shopcatalog.fragment;
 
 import android.content.DialogInterface;
 import android.os.AsyncTask;
@@ -14,6 +14,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+
+import com.google.shopcatalog.FarforFetchr;
+import com.google.shopcatalog.MainActivity;
+import com.google.shopcatalog.model.ModelCategoryOffers;
+import com.google.shopcatalog.R;
+import com.google.shopcatalog.adapter.RVCategoryAdapter;
+import com.google.shopcatalog.RecyclerItemClickListener;
+import com.google.shopcatalog.Utils;
 
 import java.util.ArrayList;
 

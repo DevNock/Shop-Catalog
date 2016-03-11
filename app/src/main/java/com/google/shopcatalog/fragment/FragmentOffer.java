@@ -1,4 +1,4 @@
-package com.google.shopcatalog;
+package com.google.shopcatalog.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.shopcatalog.MainActivity;
+import com.google.shopcatalog.model.ModelOffer;
+import com.google.shopcatalog.R;
 import com.squareup.picasso.Picasso;
 
 /**
@@ -42,7 +45,9 @@ public class FragmentOffer extends Fragment {
 
         getActivity().setTitle(offer.getName());
 
-        Picasso.with(getContext()).load(offer.getUrlPhoto()).into(photo);
+        if(offer.getUrlPhoto() != "" && offer.getUrlPhoto() != null) {
+            Picasso.with(getContext()).load(offer.getUrlPhoto()).into(photo);
+        }
         if(offer.getName() != null) {
             name.setText(offer.getName());
         }

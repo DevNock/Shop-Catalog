@@ -1,4 +1,4 @@
-package com.google.shopcatalog;
+package com.google.shopcatalog.model;
 
 import java.util.ArrayList;
 

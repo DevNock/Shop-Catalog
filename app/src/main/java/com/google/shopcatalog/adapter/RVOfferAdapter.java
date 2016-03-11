@@ -1,4 +1,4 @@
-package com.google.shopcatalog;
+package com.google.shopcatalog.adapter;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.shopcatalog.R;
+import com.google.shopcatalog.model.ModelOffer;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -18,7 +20,7 @@ import java.util.ArrayList;
 public class RVOfferAdapter extends RecyclerView.Adapter<RVOfferAdapter.OfferViewHolder>{
 
     ArrayList<ModelOffer> offers;
-    RVOfferAdapter(ArrayList<ModelOffer> offers) {
+    public RVOfferAdapter(ArrayList<ModelOffer> offers) {
         this.offers = offers;
     }
 
@@ -41,7 +43,7 @@ public class RVOfferAdapter extends RecyclerView.Adapter<RVOfferAdapter.OfferVie
         } else{
             holder.offerWeight.setVisibility(View.GONE);
         }
-        if(offer.getUrlPhoto() != null) {
+        if(offer.getUrlPhoto() != null && offer.getUrlPhoto() != "") {
             Picasso.with(holder.offerPhoto.getContext())
                     .load(offer.getUrlPhoto())
                     .into(holder.offerPhoto);

@@ -2,6 +2,8 @@ package com.google.shopcatalog;
 
 import android.util.Log;
 
+import com.google.shopcatalog.model.ModelCategoryOffers;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
@@ -27,18 +29,10 @@ public class FarforFetchr {
 
         try {
             String xmlString = getXml();
-            Log.i(TAG, "Received xml: " + xmlString);
-            XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
-            XmlPullParser parser = factory.newPullParser();
-            parser.setInput(new StringReader(xmlString));
-
-            items = Utils.parseItems(items, parser);
+            items = XMLParser.parseItems(items, xmlString);
         } catch (IOException ioe) {
             Log.e(TAG, "Failed to fetch items", ioe);   // if connection is failed try again
             return fetchCategory();
-        } catch (XmlPullParserException xppe) {
-            Log.e(TAG, "Failed to parse items", xppe);
-            return items;
         }
         return items;
     }

@@ -1,4 +1,4 @@
-package com.google.shopcatalog;
+package com.google.shopcatalog.adapter;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.shopcatalog.R;
+import com.google.shopcatalog.model.ModelCategoryOffers;
+
 import java.util.ArrayList;
 
 /**
@@ -16,7 +19,7 @@ import java.util.ArrayList;
 public class RVCategoryAdapter extends RecyclerView.Adapter<RVCategoryAdapter.CategoryViewHolder>{
 
     ArrayList<ModelCategoryOffers> categories;
-    RVCategoryAdapter(ArrayList<ModelCategoryOffers> categories){
+    public RVCategoryAdapter(ArrayList<ModelCategoryOffers> categories){
         this.categories = categories;
     }
 

@@ -1,7 +1,6 @@
-package com.google.shopcatalog;
+package com.google.shopcatalog.fragment;
 
 import android.Manifest;
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -11,7 +10,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,8 +20,9 @@ import com.google.android.gms.maps.*;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.shopcatalog.*;
+import com.google.shopcatalog.R;
 
-import java.security.Permission;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,7 +40,7 @@ public class FragmentContacts extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_contacts, container, false);
+        View view = inflater.inflate(com.google.shopcatalog.R.layout.fragment_contacts, container, false);
         isPermisson_granted = true;
         defaultPostion = new LatLng(53.904444, 27.587389);
         createMapView();

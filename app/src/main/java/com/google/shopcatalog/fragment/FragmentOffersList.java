@@ -1,4 +1,4 @@
-package com.google.shopcatalog;
+package com.google.shopcatalog.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,6 +8,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.google.shopcatalog.MainActivity;
+import com.google.shopcatalog.model.ModelOffer;
+import com.google.shopcatalog.R;
+import com.google.shopcatalog.adapter.RVOfferAdapter;
+import com.google.shopcatalog.RecyclerItemClickListener;
 
 import java.util.ArrayList;
 
